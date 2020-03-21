@@ -1,13 +1,34 @@
 import React from 'react'
 
-const App = () => {
-  return (
-    <div>
-      <video muted loop autoPlay>
-        <source src='/background.mp4' type='video/mp4'/>
-      </video>
-    </div>
-  )
+import Start from './Start'
+import Main from './Main'
+
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      mainVisible: false
+    }
+    this.clickHandler = this.clickHandler.bind(this)
+  }
+
+  clickHandler () {
+    console.log('worked')
+    this.setState({
+      mainVisible: true
+    })
+  }
+
+  render () {
+    return (
+      <div>
+        {this.state.mainVisible
+          ? <Main />
+          : <Start clickHandler={this.clickHandler}/>
+        }
+      </div>
+    )
+  }
 }
 
 export default App
