@@ -51,6 +51,7 @@
     "nodemon": "^1.19.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "typescript": "^3.8.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
