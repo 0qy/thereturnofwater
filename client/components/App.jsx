@@ -2,7 +2,11 @@ import React from 'react'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <div>
+      <video muted loop autoPlay>
+        <source src='/background.mp4' type='video/mp4'/>
+      </video>
+    </div>
   )
 }
 
