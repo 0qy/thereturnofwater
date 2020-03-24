@@ -1,7 +1,11 @@
+body{
+  width: 800%;
+  height: 100%
+}
 
 .main{
-  width: 4000px;
-  height: 2000px;
+  width: 5000px;
+  height: 100%;
   z-index: -10;
 }
 .fullScreen{
@@ -22,4 +26,16 @@ video.fullScreen{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.content{
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.directionDiagram{
+  top: 100;
+  left: 500;
 }
