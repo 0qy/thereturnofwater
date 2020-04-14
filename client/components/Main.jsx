@@ -1,6 +1,4 @@
 import React from 'react'
-import { Player, ControlBar } from 'video-react'
-import autoScroll from '../scripts/autoScroll'
 
 class Main extends React.Component {
   componentDidMount () {
