@@ -13,7 +13,6 @@ class App extends React.Component {
   }
 
   clickHandler () {
-    console.log('worked')
     this.setState({
       mainVisible: true
     })
