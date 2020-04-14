@@ -27,8 +27,8 @@ class Main extends React.Component {
           <br/>
           <h2>                                                      holders</h2>
         </div>
-        <div>
-          <img className='directionDiagram' src='/images/directionDiagram.png'/>
+        <div className="elements">
+          <img id='directionDiagram' src='/images/directionDiagram.png'/>
         </div>
       </div>
     )
