@@ -12,7 +12,7 @@ class Main extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div className="container">
         <div className="main">
           <video autoPlay className="fullScreen">
             <source src='/background.mp4' type='video/mp4'/>
