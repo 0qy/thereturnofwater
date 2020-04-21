@@ -1,17 +1,26 @@
 *{
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
-div.app{
-  width: 100%;
-  min-height: 100%;
+body {
+  width: 100vh;
+  min-height: 100vh;
+  background-color: black;
 }
 
 div.start{
-  width: 100%;
-  min-height: 100%;
-  background-color: aquamarine;
-  color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: "Manrope", sans-serif;
+}
+
+div.start button:hover{
+  font-size: 50px;
+  background-color: darkslateblue;
 }
 
 div#container{

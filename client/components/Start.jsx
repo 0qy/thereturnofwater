@@ -3,7 +3,7 @@ import React from 'react'
 const Start = (props) => {
   return (
     <div className="start">
-      <p>This Site Will Be Playing Audio</p>
+      <p>This site will be playing audio.</p>
       <button onClick={props.clickHandler}>Enter</button>
     </div>
   )
