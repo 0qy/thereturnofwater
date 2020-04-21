@@ -1,8 +1,5 @@
 import React from 'react'
 
-import Text from './Text'
-import Box from './Box'
-
 class Main extends React.Component {
   componentDidMount () {
     window.scrollTo({
@@ -10,6 +7,10 @@ class Main extends React.Component {
       left: 4000,
       behavior: 'smooth'
     })
+    setTimeout(this.playAudioFromRandom, 10000)
+  }
+
+  playAudioFromRandom = () => {
     const audioElement = document.getElementById('audio')
     const startTime = Math.floor(Math.random() * 470)
     audioElement.currentTime = startTime
@@ -35,10 +36,6 @@ class Main extends React.Component {
             <source src='/background.mp4' type='video/mp4'/>
           </video>
           <audio id="audio" loop src="monologue.mp3"/>
-        </div>
-        <div className="parentBox">
-          <Text />
-          <Box />
         </div>
       </div>
     )

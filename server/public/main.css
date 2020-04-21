@@ -66,15 +66,26 @@ div.parentBox{
   display: flex;
   flex-direction: column;
   max-height: 80%;
+  align-items: center;
 }
 
 div.box{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-div.box img{
+div.child{
+  padding: 10px;
+  width: 60vh;
+  min-height: 20vh;
+}
+
+div.child img{
   object-fit: contain;
-  height: 300px;
+  width: auto;
+  height: 45vh;
+  /* transform: scale(0.5); */
 }
