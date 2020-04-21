@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="app">
         {this.state.mainVisible
           ? <Main />
           : <Start clickHandler={this.clickHandler}/>
